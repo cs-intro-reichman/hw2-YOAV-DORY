@@ -8,13 +8,22 @@ public class TimeCalc {
         int Newm = Totalmin % 60;
         if (Newh > 12){
 			Newh = Newh - 12;
-			if (Newm < 10){
-				System.out.println("0" + Newh + ":0" + Newm);
-			}
-			else{
-				System.out.println("0" + Newh + ":" + Newm);
-			}
-			
+            if (Newh < 10){
+                if (Newm < 10){
+				    System.out.println("0" + Newh + ":0" + Newm);
+			    }
+			    else{
+				    System.out.println("0" + Newh + ":" + Newm);
+			    }
+            }
+            else{
+                if (Newm < 10){
+				    System.out.println(Newh + ":0" + Newm);
+			    }
+			    else{
+				    System.out.println(Newh + ":" + Newm);
+			    }
+            }
 		}
         else{
             if (Newh == 12){
@@ -27,10 +36,10 @@ public class TimeCalc {
             }
             else{
                 if (Newm < 10){
-                    System.out.println(Newh + ":0" + Newm);
+                    System.out.println("0" + Newh + ":0" + Newm);
                 }
                 else{
-                    System.out.println(Newh + ":" + Newm);
+                    System.out.println("0" + Newh + ":" + Newm);
                 }
             }
         }
