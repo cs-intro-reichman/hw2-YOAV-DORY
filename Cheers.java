@@ -18,7 +18,7 @@ public class Cheers {
                         System.out.println("Give me an " + Word.charAt(i) + ": " + Word.charAt(i) + "!");
                 }
                 else{
-                        System.out.println("Give me a " + Word.charAt(i) + ": " + Word.charAt(i) + "!");
+                        System.out.println("Give me a  " + Word.charAt(i) + ": " + Word.charAt(i) + "!");
                 }
                 i++;
             }
