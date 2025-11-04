@@ -9,28 +9,28 @@ public class TimeCalc {
         if (Newh > 12){
 			Newh = Newh - 12;
 			if (Newm < 10){
-				System.out.println("0" + Newh + ":0" + Newm + " PM");
+				System.out.println("0" + Newh + ":0" + Newm);
 			}
 			else{
-				System.out.println("0" + Newh + ":" + Newm + " PM");
+				System.out.println("0" + Newh + ":" + Newm);
 			}
 			
 		}
         else{
             if (Newh == 12){
                 if (Newm < 10){
-                    System.out.println(Newh + ":0" + Newm + " PM");
+                    System.out.println(Newh + ":0" + Newm);
                 }
                 else{
-                    System.out.println(Newh + ":" + Newm + " PM");
+                    System.out.println(Newh + ":" + Newm);
                 }	
             }
             else{
                 if (Newm < 10){
-                    System.out.println(Newh + ":0" + Newm + " AM");
+                    System.out.println(Newh + ":0" + Newm);
                 }
                 else{
-                    System.out.println(Newh + ":" + Newm + " AM");
+                    System.out.println(Newh + ":" + Newm);
                 }
             }
         }
