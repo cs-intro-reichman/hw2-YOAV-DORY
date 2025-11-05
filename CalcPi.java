@@ -4,7 +4,7 @@ public class CalcPi {
 	    int N = Integer.parseInt(args[0]);
 		double ApproxPi = 1.0;
 		double Divider = 3;
-		while (Divider < N && Divider > -N) {
+		while (Divider <= N && Divider >= -N) {
 			ApproxPi = ApproxPi -  (1/Divider);
 			if (Divider > 0){
 				Divider += 2;
